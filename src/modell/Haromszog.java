@@ -45,8 +45,7 @@ public class Haromszog {
         s += "   ^   \n";
         s += "  / \\  \n";
         s += " /   \\  \n";
-        s += "/     \\ \n" ;
-        s += "--------\n";
+        s += "/_____\\ " ;
         return s;       
     }}
     

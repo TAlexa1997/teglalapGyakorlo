@@ -36,11 +36,10 @@ public class Teglalap {
 
     public String getRajz() {
         String s = "";
-        s += " -------\n";
+        s += " _______\n";
         s += "|       |\n";
         s += "|       |\n";
-        s += "|       |\n";
-        s += "---------\n";
+        s += "|_______| ";
         return s;
     }
 }
