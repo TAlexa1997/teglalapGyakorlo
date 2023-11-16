@@ -5,7 +5,7 @@ public class Haromszog {
     private int c,d,e;
 
 
-    public Haromszog(int a, int b, int c) {
+    public Haromszog(int c, int d, int e) {
         this.c = c;
         this.d = d;
         this.e = e;
@@ -42,11 +42,11 @@ public class Haromszog {
 
     public String getRajz() {
         String s = "";
-        s += "   ^   ";
-        s += "  / \\  ";
-        s += " /   \\  ";
-        s += "/     \\ " ;
-        s += "---------";
+        s += "   ^   \n";
+        s += "  / \\  \n";
+        s += " /   \\  \n";
+        s += "/     \\ \n" ;
+        s += "--------\n";
         return s;       
     }}
     

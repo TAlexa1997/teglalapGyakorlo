@@ -30,16 +30,17 @@ public class Teglalap {
     }
 
     public int kerulet() {
+        
         return 2 * (a + b);
     }
 
     public String getRajz() {
         String s = "";
-        s += " -------";
-        s += "|       |";
-        s += "|       |";
-        s += " |       |";
-        s += "---------";
+        s += " -------\n";
+        s += "|       |\n";
+        s += "|       |\n";
+        s += "|       |\n";
+        s += "---------\n";
         return s;
     }
 }

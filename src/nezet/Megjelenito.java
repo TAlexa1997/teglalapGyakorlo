@@ -12,15 +12,17 @@ public class Megjelenito {
     private Haromszog teto;
     
     public void indito(){
+        System.out.println("Téglalap oldalai:");
         int a = bekero("\'a\' oldal: ");
         int b = bekero("\'b\' oldal: ");
         tegla = new Teglalap(a, b);
         feladat();
+        System.out.println("Háromszög oldalai:");
         int c = bekero("\'a\' oldal: ");
         int d = bekero("\'b\' oldal: ");
         int e = bekero("\'c\' oldal: ");
         teto = new Haromszog(c,d,e);
-        feladat();
+        feladat1();
     }
 
     private int bekero(String kerdes) {
@@ -29,12 +31,19 @@ public class Megjelenito {
     }
 
     private void feladat() {
+        System.out.println(tegla.getRajz());
         int t = tegla.terulet();
         int k = tegla.kerulet();
-        String ki = String.format("terület: %d, kerület: %d", t,k);
+       
+        String ki = String.format("Téglalap terület: %d és kerület: %d", t,k);
         System.out.println(ki);
+        
+    }
+    
+    private void feladat1() {
         int l = teto.kerulet();
-        String ki2 = String.format(" kerület: %d",l);
+        System.out.println(teto.getRajz());
+        String ki2 = String.format("Háromszög kerület: %d",l);
         System.out.println(ki2);
     }
     
